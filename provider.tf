@@ -4,6 +4,6 @@ provider "aws" {
 
 resource "aws_instance" "my_instance"{
     ami = var.ami
-    instance_type = "t2.micro"
+    instance_type = var.instance_type
     
 }
